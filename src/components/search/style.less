@@ -1,0 +1,30 @@
+@mobile: ~'screen and (max-device-width: 600px) and (min-device-width: 320px)';
+.app-search{
+  display: flex;
+  justify-content: center;
+  @media @mobile {
+    height: 100px;
+  }
+  .app-search-content{
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    border: 0;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    @media @mobile {
+      width: 300px;
+    }
+  }
+  .input{
+    width: 500px;
+    padding-left: 30px;
+    @media @mobile{
+      width: 100%;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+}

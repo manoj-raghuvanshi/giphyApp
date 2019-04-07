@@ -1,0 +1,38 @@
+@import "common/styles/palette";
+@mobile: ~'screen and (max-device-width: 600px) and (min-device-width: 320px)';
+
+
+body {
+  margin: auto;
+  background-color: #e6e9ed;
+  font-family: "Lato", sans-serif;
+  .app {
+    margin: 0 auto;
+    height: 100%;
+    .app-header {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      background: @darkPrimaryColor;
+      height: 56px;
+      position: relative;
+      .app-header-logo{
+        margin: 19px;
+        color: white;
+        font-size: 1.5rem;
+      }
+      @media @mobile {
+        height: 100px;
+      }
+    }
+    .app-content{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+  }
+}
+
