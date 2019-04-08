@@ -8,7 +8,7 @@ export default class Search extends React.Component {
     };
 
     handleClick = () => {
-        this.props.handleSearch(this.state.searchTerm);
+        this.props.handleSearch(this.state.searchTerm, 'click');
     };
 
     handleChange = (e) => this.setState({searchTerm: e.target.value})
